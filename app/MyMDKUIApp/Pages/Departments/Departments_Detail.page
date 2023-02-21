@@ -1,0 +1,73 @@
+{
+	"Caption": "Departments Detail",
+	"DesignTimeTarget": {
+		"Service": "/MyMDKUIApp/Services/service1.service",
+		"EntitySet": "Departments",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{name}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{department}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L,CreatedAt)",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "$(L,CreatedBy)",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "$(L,ChangedAt)",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "$(L,ChangedBy)",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "department",
+							"Value": "{department}"
+						},
+						{
+							"KeyName": "name",
+							"Value": "{name}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Departments_Detail",
+	"PrefersLargeCaption": true
+}

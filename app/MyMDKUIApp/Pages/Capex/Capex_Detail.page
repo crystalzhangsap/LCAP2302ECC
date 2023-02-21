@@ -1,0 +1,81 @@
+{
+	"Caption": "Capex Detail",
+	"DesignTimeTarget": {
+		"Service": "/MyMDKUIApp/Services/service1.service",
+		"EntitySet": "Capex",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ID}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{capex_request}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L,CreatedAt)",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "$(L,CreatedBy)",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "$(L,ChangedAt)",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "$(L,ChangedBy)",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "capex_request",
+							"Value": "{capex_request}"
+						},
+						{
+							"KeyName": "total_cost",
+							"Value": "{total_cost}"
+						},
+						{
+							"KeyName": "department_department",
+							"Value": "{department_department}"
+						},
+						{
+							"KeyName": "contractor_contractor",
+							"Value": "{contractor_contractor}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Capex_Detail",
+	"PrefersLargeCaption": true
+}
